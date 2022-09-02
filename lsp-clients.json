@@ -159,6 +159,15 @@
     "debugger": "Not available"
   },
   {
+    "name": "dot",
+    "full-name": "DOT",
+    "server-name": "dot-language-server",
+    "server-url": "https://github.com/nikeee/dot-language-server",
+    "installation": "npm install -g dot-language-server",
+    "lsp-install-server": "dot-ls",
+    "debugger": "Not available"
+  },
+  {
     "name": "elixir",
     "full-name": "Elixir",
     "server-name": "elixir-lsp/elixir-ls",
@@ -212,9 +221,9 @@
   {
     "name": "fortran",
     "full-name": "Fortran",
-    "server-name": "fortran-language-server",
-    "server-url": "https://github.com/hansec/fortran-language-server",
-    "installation": "pip install fortran-language-server",
+    "server-name": "fortls",
+    "server-url": "https://gnikit.github.io/fortls",
+    "installation": "pip install fortls",
     "debugger": "Yes"
   },
   {
