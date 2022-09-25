@@ -12,14 +12,14 @@
         <meta name="author" content="ercdll1337@gmail.com">
       
       
-        <link rel="canonical" href="https://emacs-lsp.github.io/lsp-mode/page/lsp-latex/">
+        <link rel="canonical" href="https://emacs-lsp.github.io/lsp-mode/page/lsp-pls/">
       
       <link rel="icon" href="../../examples/logo-mini.png">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.0.0">
     
     
       
-        <title>TeX, LaTeX, etc (texlab, external) - LSP Mode - LSP support for Emacs</title>
+        <title>Perl (PLS) - LSP Mode - LSP support for Emacs</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#tex-latex-etc" class="md-skip">
+        <a href="#pls" class="md-skip">
           Skip to content
         </a>
       
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              TeX, LaTeX, etc (texlab, external)
+              Perl (PLS)
             
           </span>
         </div>
@@ -1892,11 +1892,155 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../lsp-pls/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Perl (PLS)
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Perl (PLS)
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#server" class="md-nav__link">
+    Server
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#debugger-not-available" class="md-nav__link">
+    Debugger: Not available
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#available-configurations" class="md-nav__link">
+    Available configurations
+  </a>
+  
+    <nav class="md-nav" aria-label="Available configurations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pls-arguments" class="md-nav__link">
+    lsp-pls-arguments
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pls-executable" class="md-nav__link">
+    lsp-pls-executable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pls-include" class="md-nav__link">
+    lsp-pls-include
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pls-perlcritic-enabled" class="md-nav__link">
+    lsp-pls-perlcritic-enabled
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pls-perlcritic-rc" class="md-nav__link">
+    lsp-pls-perlcritic-rc
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pls-perltidy-rc" class="md-nav__link">
+    lsp-pls-perltidy-rc
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pls-syntax-args" class="md-nav__link">
+    lsp-pls-syntax-args
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pls-syntax-enabled" class="md-nav__link">
+    lsp-pls-syntax-enabled
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pls-syntax-perl" class="md-nav__link">
+    lsp-pls-syntax-perl
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pls-working-dir" class="md-nav__link">
+    lsp-pls-working-dir
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2340,120 +2484,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          TeX, LaTeX, etc (texlab, external)
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../lsp-latex/" class="md-nav__link">
         TeX, LaTeX, etc (texlab, external)
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#server" class="md-nav__link">
-    Server
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
-    Installation
-  </a>
-  
-    <nav class="md-nav" aria-label="Installation">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#debugger-not-available" class="md-nav__link">
-    Debugger: Not available
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#root_file-docsmanual-language-docslsp-latexmd" class="md-nav__link">
-    root_file: docs/manual-language-docs/lsp-latex.md
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#available-functions" class="md-nav__link">
-    Available functions
-  </a>
-  
-    <nav class="md-nav" aria-label="Available functions">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#lsp-latex-build" class="md-nav__link">
-    lsp-latex-build
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-latex-forward-search" class="md-nav__link">
-    lsp-latex-forward-search
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#note" class="md-nav__link">
-    Note
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#available-configurations" class="md-nav__link">
-    Available configurations
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -3106,50 +3141,85 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#root_file-docsmanual-language-docslsp-latexmd" class="md-nav__link">
-    root_file: docs/manual-language-docs/lsp-latex.md
+  <a href="#available-configurations" class="md-nav__link">
+    Available configurations
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#available-functions" class="md-nav__link">
-    Available functions
-  </a>
-  
-    <nav class="md-nav" aria-label="Available functions">
+    <nav class="md-nav" aria-label="Available configurations">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#lsp-latex-build" class="md-nav__link">
-    lsp-latex-build
+  <a href="#lsp-pls-arguments" class="md-nav__link">
+    lsp-pls-arguments
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#lsp-latex-forward-search" class="md-nav__link">
-    lsp-latex-forward-search
+  <a href="#lsp-pls-executable" class="md-nav__link">
+    lsp-pls-executable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pls-include" class="md-nav__link">
+    lsp-pls-include
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pls-perlcritic-enabled" class="md-nav__link">
+    lsp-pls-perlcritic-enabled
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pls-perlcritic-rc" class="md-nav__link">
+    lsp-pls-perlcritic-rc
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pls-perltidy-rc" class="md-nav__link">
+    lsp-pls-perltidy-rc
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pls-syntax-args" class="md-nav__link">
+    lsp-pls-syntax-args
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pls-syntax-enabled" class="md-nav__link">
+    lsp-pls-syntax-enabled
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pls-syntax-perl" class="md-nav__link">
+    lsp-pls-syntax-perl
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-pls-working-dir" class="md-nav__link">
+    lsp-pls-working-dir
   </a>
   
 </li>
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#note" class="md-nav__link">
-    Note
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#available-configurations" class="md-nav__link">
-    Available configurations
-  </a>
   
 </li>
       
@@ -3189,7 +3259,7 @@
 <!-- Edit button -->
 
 <a
-  href="https://github.com/emacs-lsp/lsp-mode/edit/master/clients/lsp-latex.el"
+  href="https://github.com/emacs-lsp/lsp-mode/edit/master/clients/lsp-pls.el"
   title="Edit this page"
   class="md-content__button md-icon"
 >
@@ -3208,43 +3278,69 @@
 
 
 <!-- Markdown content -->
-<h1 id="tex-latex-etc">TeX, LaTeX, etc.<a class="headerlink" href="#tex-latex-etc" title="Permanent link">#</a></h1>
+<h1 id="pls">PLS<a class="headerlink" href="#pls" title="Permanent link">#</a></h1>
 <h2 id="server">Server<a class="headerlink" href="#server" title="Permanent link">#</a></h2>
-<p>For more information about the LSP server, check <a href="https://github.com/latex-lsp/texlab">texlab</a>.</p>
+<p>For more information about the LSP server, check <a href="https://metacpan.org/pod/PLS">Perl Language Server</a>.</p>
 <h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">#</a></h2>
-<p><code>cargo install --git https://github.com/latex-lsp/texlab.git</code></p>
+<p><code>cpan PLS</code></p>
 <h3 id="debugger-not-available">Debugger: Not available<a class="headerlink" href="#debugger-not-available" title="Permanent link">#</a></h3>
-<hr />
-<h2 id="root_file-docsmanual-language-docslsp-latexmd">root_file: docs/manual-language-docs/lsp-latex.md<a class="headerlink" href="#root_file-docsmanual-language-docslsp-latexmd" title="Permanent link">#</a></h2>
-<h2 id="available-functions">Available functions<a class="headerlink" href="#available-functions" title="Permanent link">#</a></h2>
-<h3 id="lsp-latex-build"><code>lsp-latex-build</code><a class="headerlink" href="#lsp-latex-build" title="Permanent link">#</a></h3>
-<p>Build .tex files with texlab.
-It use latexmk by default, so add .latexmkrc if you want to customize
-latex commands or options. You can change build command and option to other
-such as <code>make</code>, by changing <code>lsp-latex-build-executable</code> and
-<code>lsp-latex-build-args</code>.</p>
-<p>This command builds asynchronously by default, while it build synchronously
-with prefix argument(C-u).</p>
-<h3 id="lsp-latex-forward-search"><code>lsp-latex-forward-search</code><a class="headerlink" href="#lsp-latex-forward-search" title="Permanent link">#</a></h3>
-<p>Move to current position on pdf viewer.
-To use, you should set <code>lsp-latex-forward-search-executable</code> and
-<code>lsp-latex-forward-search-args</code> according to your pdf viewer.
-See also <a href="https://texlab.netlify.app/docs/installation/previewing">document of texlab</a>.</p>
-<h2 id="note">Note<a class="headerlink" href="#note" title="Permanent link">#</a></h2>
-<p>In this package, you can use even texlab v0.4.2 or older, written with Java,
-though it is not recommended. If you want to use them, you can write like:</p>
-<div class="highlight"><pre><span></span><code><span class="c1">;; Path to Java executable. If it is added to environmental PATH,</span>
-<span class="c1">;; you don&#39;t have to write this.</span>
-<span class="p">(</span><span class="k">setq</span> <span class="nv">lsp-latex-java-executable</span> <span class="s">&quot;/path/to/java&quot;</span><span class="p">)</span>
-
-<span class="c1">;; &quot;texlab.jar&quot; must be located at a directory contained in `exec-path&#39;</span>
-<span class="c1">;; &quot;texlab&quot; must be located at a directory contained in `exec-path&#39;.</span>
-<span class="p">(</span><span class="k">setq</span> <span class="nv">lsp-latex-texlab-jar-file</span> <span class="ss">&#39;search-from-exec-path</span><span class="p">)</span>
-<span class="c1">;; If you want to put &quot;texlab.jar&quot; somewhere else,</span>
-<span class="c1">;; you can specify the path to &quot;texlab.jar&quot; as follows:</span>
-<span class="c1">;; (setq lsp-latex-texlab-jar-file &quot;/path/to/texlab.jar&quot;)</span>
-</code></pre></div>
 <h2 id="available-configurations">Available configurations<a class="headerlink" href="#available-configurations" title="Permanent link">#</a></h2>
+<h3 id="lsp-pls-arguments"><code>lsp-pls-arguments</code><a class="headerlink" href="#lsp-pls-arguments" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>(repeat 'string)</code></p>
+<p><em>Default:</em> <code>nil</code></p>
+<p>Additional arguments needed to execute PLS.</p>
+<hr />
+<h3 id="lsp-pls-executable"><code>lsp-pls-executable</code><a class="headerlink" href="#lsp-pls-executable" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>(string)</code></p>
+<p><em>Default:</em> <code>pls</code></p>
+<p>Full path to the PLS executable.</p>
+<hr />
+<h3 id="lsp-pls-include"><code>lsp-pls-include</code><a class="headerlink" href="#lsp-pls-include" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>(repeat 'string)</code></p>
+<p><em>Default:</em> <code>nil</code></p>
+<p>Paths to be added to your @INC.</p>
+<hr />
+<h3 id="lsp-pls-perlcritic-enabled"><code>lsp-pls-perlcritic-enabled</code><a class="headerlink" href="#lsp-pls-perlcritic-enabled" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>(boolean)</code></p>
+<p><em>Default:</em> <code>t</code></p>
+<p>Enable perlcritic checking.</p>
+<hr />
+<h3 id="lsp-pls-perlcritic-rc"><code>lsp-pls-perlcritic-rc</code><a class="headerlink" href="#lsp-pls-perlcritic-rc" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>(string)</code></p>
+<p><em>Default:</em> <code>nil</code></p>
+<p>Path to your .perlcriticrc file.
+Default is "~/.perlcriticrc" when not configured.</p>
+<hr />
+<h3 id="lsp-pls-perltidy-rc"><code>lsp-pls-perltidy-rc</code><a class="headerlink" href="#lsp-pls-perltidy-rc" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>(string)</code></p>
+<p><em>Default:</em> <code>nil</code></p>
+<p>Path to your .perltidyrc file.
+Default is "~/.perltidyrc" when not configured.</p>
+<hr />
+<h3 id="lsp-pls-syntax-args"><code>lsp-pls-syntax-args</code><a class="headerlink" href="#lsp-pls-syntax-args" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>(repeat 'string)</code></p>
+<p><em>Default:</em> <code>nil</code></p>
+<p>Additional arguments to pass to Perl when syntax checking.
+This is useful if there is a BEGIN block in your code that
+changes behavior depending on the contents of @ARGV.</p>
+<hr />
+<h3 id="lsp-pls-syntax-enabled"><code>lsp-pls-syntax-enabled</code><a class="headerlink" href="#lsp-pls-syntax-enabled" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>(boolean)</code></p>
+<p><em>Default:</em> <code>t</code></p>
+<p>Enable syntax checking.</p>
+<hr />
+<h3 id="lsp-pls-syntax-perl"><code>lsp-pls-syntax-perl</code><a class="headerlink" href="#lsp-pls-syntax-perl" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>(string)</code></p>
+<p><em>Default:</em> <code>nil</code></p>
+<p>Full path to an alternate perl used for syntax checking.
+By default, the perl used to run PLS will be used.</p>
+<hr />
+<h3 id="lsp-pls-working-dir"><code>lsp-pls-working-dir</code><a class="headerlink" href="#lsp-pls-working-dir" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>(string)</code></p>
+<p><em>Default:</em> <code>nil</code></p>
+<p>Working directory to run PLS in.
+Defaults to the workspace root when not configured.</p>
+<hr />
 
 <!-- Source file information -->
 
@@ -3271,7 +3367,7 @@ though it is not recommended. If you want to use them, you can write like:</p>
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../lsp-texlab/" class="md-footer__link md-footer__link--prev" aria-label="Previous: TeX, LaTeX, etc (texlab)" rel="prev">
+        <a href="../lsp-pascal/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Pascal/Object Pascal" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -3280,20 +3376,20 @@ though it is not recommended. If you want to use them, you can write like:</p>
               <span class="md-footer__direction">
                 Previous
               </span>
-              TeX, LaTeX, etc (texlab)
+              Pascal/Object Pascal
             </div>
           </div>
         </a>
       
       
         
-        <a href="../lsp-toml/" class="md-footer__link md-footer__link--next" aria-label="Next: TOML" rel="next">
+        <a href="../lsp-perl/" class="md-footer__link md-footer__link--next" aria-label="Next: Perl (Perl::LanguageServer)" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              TOML
+              Perl (Perl::LanguageServer)
             </div>
           </div>
           <div class="md-footer__button md-icon">
