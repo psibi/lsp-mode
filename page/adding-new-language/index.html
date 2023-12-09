@@ -1375,6 +1375,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-cypher/" class="md-nav__link">
+        Cypher
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-d/" class="md-nav__link">
         D
       </a>
@@ -1473,7 +1487,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lsp-erlang/" class="md-nav__link">
+      <a href="../lsp-erlang.md" class="md-nav__link">
         Erlang
       </a>
     </li>
@@ -1488,7 +1502,7 @@
   
     <li class="md-nav__item">
       <a href="../lsp-eslint/" class="md-nav__link">
-        Eslint
+        ESLint
       </a>
     </li>
   
@@ -1893,6 +1907,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-move/" class="md-nav__link">
+        Move
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-mdx/" class="md-nav__link">
+        MDX
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="https://emacs-lsp.github.io/lsp-mssql" class="md-nav__link">
         MSSQL
       </a>
@@ -2259,6 +2301,20 @@
     <li class="md-nav__item">
       <a href="../lsp-racket-language-server/" class="md-nav__link">
         Racket (Theia)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-rubocop/" class="md-nav__link">
+        Ruby (RuboCop)
       </a>
     </li>
   
@@ -2691,6 +2747,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-wgsl.md" class="md-nav__link">
+        wgsl
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-xml/" class="md-nav__link">
         XML
       </a>
@@ -3003,6 +3073,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/crystal-guide/" class="md-nav__link">
+        Configuring Emacs as a Crystal IDE
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -3263,6 +3347,16 @@ corresponding mode -> language id - in this case <code>(python-mode .
 <p><code>lsp-mode</code> is using <code>lsp-language-id-configuration</code> to determine what is the
 buffer language. When the <code>major-mode</code> is not sufficient to determine the
 language (e.g. <code>web-mode</code> is used for <code>javascript</code>, <code>html</code>, and <code>css</code>) you can put regex.</p>
+<p><strong>Note:</strong> In the above example, when a new client is created using
+<code>make-lsp-client</code>, a new connection to the language server is created
+using <code>lsp-stdio-connection</code>.  Please carefully check its
+documentation, as the function checks for various things (e.g. testing
+for the executable in PATH) and handles respective errors.  Often
+while adding a server, the LSP client author might do these checks
+themselves, but without handling the errors correctly.  This leads to
+features like <code>lsp-install-server</code> breaking for other users; e.g. see
+<a href="https://github.com/emacs-lsp/lsp-mode/issues/3415">this issue</a>.  This
+is a common mistake that keeps reoccurring.</p>
 <p>Here's an example of how to set up a custom language server in your <code>init.el</code> file:</p>
 <div class="highlight"><pre><span></span><code><span class="c1">;; Use shopify-cli / theme-check-language-server for Shopify&#39;s liquid syntax</span>
 <span class="p">(</span><span class="nb">with-eval-after-load</span> <span class="ss">&#39;lsp-mode</span>
@@ -3303,8 +3397,8 @@ client has been loaded.</p>
 
 <span class="p">(</span><span class="nv">lsp-register-client</span>
  <span class="p">(</span><span class="nv">make-lsp-client</span>
-  <span class="c1">;; instead of `:new-connection (lsp-stdio-connection lsp-text-executable)` use</span>
-  <span class="nb">:new-connection</span> <span class="p">(</span><span class="nv">lsp-stdio-connection</span> <span class="p">(</span><span class="nb">lambda</span> <span class="p">()</span> <span class="nv">lsp-text-executable</span><span class="p">))</span>
+  <span class="c1">;; instead of `:new-connection (lsp-stdio-connection lsp-tex-executable)` use</span>
+  <span class="nb">:new-connection</span> <span class="p">(</span><span class="nv">lsp-stdio-connection</span> <span class="p">(</span><span class="nb">lambda</span> <span class="p">()</span> <span class="nv">lsp-tex-executable</span><span class="p">))</span>
   <span class="nb">:activation-fn</span> <span class="p">(</span><span class="nv">lsp-activate-on</span> <span class="s">&quot;plaintex&quot;</span> <span class="s">&quot;latex&quot;</span><span class="p">)</span>
   <span class="nb">:priority</span> <span class="mi">-1</span>
   <span class="nb">:server-id</span> <span class="ss">&#39;digestif</span><span class="p">))</span>
@@ -3336,7 +3430,7 @@ VScode plugin manifest. Example:</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 27, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 26, 2023</span>
       
     
   </small>
